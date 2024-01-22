@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment</title>
+</head>
+<body>
+
+<h2>comments</h2>
+
+<form id="commentForm">
+    <label for="comment">comment</label>
+    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+    <br>
+    <button type="button" onclick="addComment()">button</button>
+</form>
+<div id="comments">
+</div>
+
+<script>
+    function addComment() {
+        var commentText = document.getElementById("comment").value;
+
+        if (commentText.trim() === "") {
+            alert("");
+            return;
+        }
+
+        var newComment = document.createElement("p");
+        newComment.textContent = commentText;
+
+        document.getElementById("comments").appendChild(newComment);
+
+        document.getElementById("comment").value = "";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postiki</title>
+    <style>
+        .post {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+        }
+        .comment {
+            margin-left: 20px;
+        }
+        .like-btn {
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="post">
+    <p>posti</p>
+
+    <button class="like-btn" onclick="toggleLike(1)">like</button>
+    <span id="likesCount1">0</span>
+
+    <div class="comment">
+        <p>koment1</p>
+    </div>
+    <div class="comment">
+        <p>koment2</p>
+    </div>
+</div>
+
+<div class="post">
+    <p>post</p>
+
+    <button class="like-btn" onclick="toggleLike(2)">button</button>
+    <span id="likesCount2">0</span>
+
+    <div class="comment">
+        <p>komenti</p>
+    </div>
+</div>
+
+<script>
+    const likesCount1 = document.getElementById('likesCount1');
+    let likes1 = 0;
+
+    const likesCount2 = document.getElementById('likesCount2');
+    let likes2 = 0;
+
+    function toggleLike(postId) {
+        if (postId === 1) {
+            likes1 += 1;
+            likesCount1.innerText = likes1;
+        } else if (postId === 2) {
+            likes2 += 1;
+            likesCount2.innerText = likes2;
+        }
+    }
+</script>
+
+</body>
+</html>
