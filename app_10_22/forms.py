@@ -76,6 +76,6 @@ class CommentForm(forms.ModelForm):
 class UpdateProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['field1', 'field2', ...]
+        fields = ['bio']
 
 

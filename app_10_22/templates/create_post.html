@@ -52,13 +52,9 @@
 <div class="container">
     <h2>container</h2>
 
-    <form class="post-form">
-        <label for="postTitle">PostTitel</label>
-        <input type="text" id="postTitle" name="postTitle" required>
-
-        <label for="postContent">PostContent</label>
-        <textarea id="postContent" name="postContent" rows="4" required></textarea>
-
+    <form class="post-form" method="POST" >
+        {{ form }}
+        {% csrf_token %}
         <button type="submit">sumbit</button>
     </form>
 </div>

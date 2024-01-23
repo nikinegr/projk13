@@ -28,11 +28,11 @@ def registration(request):
             user = User(username=name, email=email, password=password)
             user.save()
             login(request, user)
-            return redirect('/')
+            return redirect(f'/profile/{user.id}/')
     else:
         form = RegistrationForm()
     context = {'form': form}
-    return render(request, 'home.html', context)
+    return render(request, 'registration.html', context)
 
 
 class Registration (CreateView):
@@ -67,11 +67,11 @@ def login_page(request):
                 login(request, user)
                 return redirect('/')
             else:
-                return redirect('/login')
+                return redirect(f'/profile/{user.id}/')
     else:
         form = LoginForm()
     context = {'form': form}
-    return render(request, 'home.html', context)
+    return render(request, 'login.html', context)
 
 
 def home (request):
@@ -208,7 +208,7 @@ def create_post(request):
             new_post = form.save(commit=False)
             new_post.user = request.user
             new_post.save()
-            return redirect('home')
+            return redirect('/all_posts/')
     else:
         form = PostForm()
     return render(request, 'create_post.html', {'form': form})
@@ -295,4 +295,6 @@ def update_profile(request):
     return render(request, 'update_profile.html', {'form': form})
 
 
-
+def main_post(request):
+    main_post = Post.objects.all()
+    return render(request, 'main_post.html', {'posts': main_post})

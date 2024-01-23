@@ -2898,3 +2898,621 @@ Not Found: /profile/1/profile_picture.jpg
 "GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4301
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4381
+"GET /search/ HTTP/1.1" 200 686
+"POST /searchingUser/ HTTP/1.1" 200 52
+"GET /profile/1/ HTTP/1.1" 200 2327
+Not Found: /profile/1/profile_picture.jpg
+"GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4486
+Internal Server Error: /update_profile
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/update_profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /update_profile HTTP/1.1" 500 70815
+Internal Server Error: /update_profile
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/update_profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /update_profile HTTP/1.1" 500 70815
+"GET /profile/1/ HTTP/1.1" 200 2328
+Not Found: /profile/1/profile_picture.jpg
+"GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4486
+Forbidden (CSRF token missing.): /update_profile/
+"POST /update_profile/ HTTP/1.1" 403 2506
+"GET /profile/1/ HTTP/1.1" 200 2462
+Not Found: /profile/1/profile_picture.jpg
+"GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4486
+Internal Server Error: /update_profile/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 288, in update_profile
+    form = UpdateProfileForm(request.POST, instance=request.user.profile)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'profile'
+"POST /update_profile/ HTTP/1.1" 500 70021
+"GET /login HTTP/1.1" 301 0
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: login() missing 1 required positional argument: 'user'
+"GET /login/ HTTP/1.1" 500 60919
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: login() missing 1 required positional argument: 'user'
+"GET /login/ HTTP/1.1" 500 61056
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 203
+"GET /login/ HTTP/1.1" 200 203
+"GET /login/ HTTP/1.1" 200 203
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /search/ HTTP/1.1" 200 686
+"GET /registration/ HTTP/1.1" 200 1487
+"GET /searchingUser/ HTTP/1.1" 200 686
+"GET /login/ HTTP/1.1" 200 801
+"POST /login/ HTTP/1.1" 200 801
+"GET /registration HTTP/1.1" 301 0
+"GET /registration/ HTTP/1.1" 200 1487
+Internal Server Error: /registration/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 136, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 121, in get_success_url
+    if self.success_url:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+"POST /registration/ HTTP/1.1" 500 107825
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /registration/ HTTP/1.1" 200 1610
+"GET /login/ HTTP/1.1" 200 801
+"POST /login/ HTTP/1.1" 200 801
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 1487
+"GET /login/ HTTP/1.1" 200 801
+"POST /login/ HTTP/1.1" 200 801
+"POST /login/ HTTP/1.1" 200 801
+"POST /login/ HTTP/1.1" 200 801
+"GET /search/ HTTP/1.1" 200 686
+"POST /searchingUser/ HTTP/1.1" 200 46
+"GET /profile/2 HTTP/1.1" 301 0
+"GET /profile/2/ HTTP/1.1" 200 2462
+Not Found: /profile/2/profile_picture.jpg
+"GET /profile/2/profile_picture.jpg HTTP/1.1" 404 4486
+Internal Server Error: /update_profile/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 288, in update_profile
+    form = UpdateProfileForm(request.POST, instance=request.user.profile)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'profile'
+"POST /update_profile/ HTTP/1.1" 500 70018
+"GET /registration/ HTTP/1.1" 200 1487
+"POST /registration/ HTTP/1.1" 200 1619
+Internal Server Error: /registration/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 136, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 121, in get_success_url
+    if self.success_url:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 149, in __wrapper__
+    res = func(*self.__args, **self.__kw)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+"POST /registration/ HTTP/1.1" 500 107828
+"GET /login/ HTTP/1.1" 200 801
+"POST /login/ HTTP/1.1" 200 801
+"GET /search/ HTTP/1.1" 200 686
+"POST /searchingUser/ HTTP/1.1" 200 89
+"GET /profile/3 HTTP/1.1" 301 0
+"GET /profile/3/ HTTP/1.1" 200 2462
+Not Found: /profile/3/profile_picture.jpg
+"GET /profile/3/profile_picture.jpg HTTP/1.1" 404 4486
+Internal Server Error: /update_profile/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 288, in update_profile
+    form = UpdateProfileForm(request.POST, instance=request.user.profile)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'profile'
+"POST /update_profile/ HTTP/1.1" 500 70014
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /update_profile/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 288, in update_profile
+    form = UpdateProfileForm(request.POST, instance=request.user.profile)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'profile'
+"POST /update_profile/ HTTP/1.1" 500 70014
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+"GET /registration/ HTTP/1.1" 200 801
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 1487
+"GET /registration/ HTTP/1.1" 200 1487
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /registration/ HTTP/1.1" 302 0
+Not Found: /profile/
+"GET /profile/ HTTP/1.1" 404 4444
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /profile/
+"GET /profile/ HTTP/1.1" 404 4444
+Forbidden (CSRF token from POST incorrect.): /registration/
+"POST /registration/ HTTP/1.1" 403 2518
+"GET /registration/ HTTP/1.1" 200 1487
+"GET /registration/ HTTP/1.1" 200 1487
+"POST /registration/ HTTP/1.1" 302 0
+"GET /profile/5/ HTTP/1.1" 200 2462
+Not Found: /profile/5/profile_picture.jpg
+"GET /profile/5/profile_picture.jpg HTTP/1.1" 404 4507
+Internal Server Error: /update_profile/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 473, in __get__
+    rel_obj = self.related.get_cached_value(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\mixins.py", line 15, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: app_10_22_profile
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 288, in update_profile
+    form = UpdateProfileForm(request.POST, instance=request.user.profile)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 481, in __get__
+    rel_obj = self.get_queryset(instance=instance).get(**filter_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: app_10_22_profile
+"POST /update_profile/ HTTP/1.1" 500 149493
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4402
+"GET /login/ HTTP/1.1" 200 801
+"POST /login/ HTTP/1.1" 200 801
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 1487
+"POST /registration/ HTTP/1.1" 200 1610
+"POST /registration/ HTTP/1.1" 302 0
+"GET /profile/6/ HTTP/1.1" 200 2462
+Not Found: /profile/6/profile_picture.jpg
+"GET /profile/6/profile_picture.jpg HTTP/1.1" 404 4507
+Internal Server Error: /update_profile/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 288, in update_profile
+    form = UpdateProfileForm(request.POST, instance=request.user.profile)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 492, in __get__
+    raise self.RelatedObjectDoesNotExist(
+app_10_22.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+"POST /update_profile/ HTTP/1.1" 500 74651
+C:\Users\User\Desktop\django_test3\django_test3\django_test3\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /create_post/ HTTP/1.1" 200 1749
+"GET /create_post/?postTitle=%27132%271&postContent=wqeqweq HTTP/1.1" 200 1749
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 299, in main_post
+    posts = Post.objects.all().order_by('-timestamp')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timestamp' into field. Choices are: comment, content, created_at, id, like, user, user_id
+"GET /all_posts/ HTTP/1.1" 500 79068
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 299, in main_post
+    posts = Post.objects.all().order_by('-timestamp')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timestamp' into field. Choices are: comment, content, created_at, id, like, user, user_id
+"GET /all_posts/ HTTP/1.1" 500 79209
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 299, in main_post
+    posts = Post.objects.all().order_by('-timestamp')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timestamp' into field. Choices are: comment, content, created_at, id, like, user, user_id
+"GET /all_posts/ HTTP/1.1" 500 79209
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 299, in main_post
+    posts = Post.objects.all().order_by('-timestamp')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timestamp' into field. Choices are: comment, content, created_at, id, like, user, user_id
+"GET /all_posts/ HTTP/1.1" 500 79209
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 299, in main_post
+    posts = Post.objects.all().order_by('-timestamp')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timestamp' into field. Choices are: comment, content, created_at, id, like, user, user_id
+"GET /all_posts/ HTTP/1.1" 500 79209
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 299, in main_post
+    posts = Post.objects.all().order_by('-timestamp')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timestamp' into field. Choices are: comment, content, created_at, id, like, user, user_id
+"GET /all_posts/ HTTP/1.1" 500 79209
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 299, in main_post
+    main_post = Post.objects.all().order_by('-timestamp')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timestamp' into field. Choices are: comment, content, created_at, id, like, user, user_id
+"GET /all_posts/ HTTP/1.1" 500 79233
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py", line 299, in main_post
+    main_post = Post.objects.all().order_by('-timestamp')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 2221, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'timestamp' into field. Choices are: comment, content, created_at, id, like, user, user_id
+"GET /all_posts/ HTTP/1.1" 500 79233
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /all_posts/ HTTP/1.1" 200 247
+"GET /create_post/ HTTP/1.1" 200 1749
+"GET /create_post/?postTitle=%27132%271&postContent=1231231 HTTP/1.1" 200 1749
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /create_post/ HTTP/1.1" 200 1749
+"GET /create_post/?postTitle=1231&postContent=123123 HTTP/1.1" 200 1749
+"GET /create_post/?postTitle=3212312&postContent=311323123 HTTP/1.1" 200 1749
+"GET /create_post/?postTitle=3212312&postContent=311323123 HTTP/1.1" 200 1763
+Forbidden (CSRF token missing.): /create_post/
+"POST /create_post/?postTitle=3212312&postContent=311323123 HTTP/1.1" 403 2506
+"GET /create_post/?postTitle=3212312&postContent=311323123 HTTP/1.1" 200 1893
+"POST /create_post/?postTitle=3212312&postContent=311323123 HTTP/1.1" 200 1893
+"GET /create_post/ HTTP/1.1" 200 1893
+"POST /create_post/ HTTP/1.1" 200 1893
+"POST /create_post/ HTTP/1.1" 200 1916
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 247
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 247
+C:\Users\User\Desktop\django_test3\django_test3\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /create_post/ HTTP/1.1" 200 1857
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4577
+"GET /create_post/ HTTP/1.1" 200 1857
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 3701
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/base.css HTTP/1.1" 200 21207
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 5809
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/app_10_22/post/ HTTP/1.1" 200 8542
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+Watching for file changes with StatReloader

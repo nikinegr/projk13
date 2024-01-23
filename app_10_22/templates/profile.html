@@ -80,7 +80,8 @@
 
     <section>
         <h2></h2>
-        <form action="/update_profile" method="POST">
+        <form action="/update_profile/" method="POST">
+            {% csrf_token %}
             <label for="username"></label>
             <input type="text" id="username" name="username" required>
 

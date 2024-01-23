@@ -155,7 +155,7 @@ AUTH_USER_MODEL = 'app_10_22.User'
 
 LOGIN_URL='/login'
 
-LOGIN_REDIRECT_URL='/profil'#потім зроблю
+LOGIN_REDIRECT_URL='/profil'
 
 LOGOUT_REDIRECT_URL='/registration'
 
