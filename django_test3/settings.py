@@ -153,11 +153,11 @@ USE_TZ = True
 
 AUTH_USER_MODEL = 'app_10_22.User'
 
-LOGIN_URL='/login'
+LOGIN_URL = '/login'
 
-LOGIN_REDIRECT_URL='/profil'
+LOGIN_REDIRECT_URL = '/profil'
 
-LOGOUT_REDIRECT_URL='/registration'
+LOGOUT_REDIRECT_URL = '/registration'
 
 
 # Static files (CSS, JavaScript, Images)

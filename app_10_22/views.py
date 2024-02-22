@@ -1,20 +1,19 @@
 from django.shortcuts import render, redirect
 from .forms import RegistrationForm, LoginForm, ProjectForm, TaskCreateForm, TestForm
 from django.contrib.auth import login, authenticate
-from .models import Project , Task, User, Post
+from .models import Project, Task, User, Post, Comment
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView, UpdateView
 from django.urls import reverse_lazy
 from django.contrib.auth.views import LoginView, FormView, TemplateView
 from django.http import HttpResponse, JsonResponse
 from django.template.loader import render_to_string
-from .forms import PostForm ,CommentForm, UpdateProfileForm
-from django.db.models import Q
+from .forms import PostForm, CommentForm, UpdateProfileForm
 
 
-class qrange(CreateView):
+class Qrange(CreateView):
     template_name = "qrange.html"
-    form_class=['email pasword']
+    form_class = ['email pasword']
     success_url = reverse_lazy('home')
 
 
@@ -38,7 +37,7 @@ def registration(request):
 class Registration (CreateView):
     template_name = 'registration.html'
     model = User
-    #fields = ['username', 'email', 'password1', 'password']
+    # fields = ['username', 'email', 'password1', 'password']
     form_class = RegistrationForm
     success_url = reverse_lazy('home')
 
@@ -49,11 +48,10 @@ class LoginPage (LoginView):
     redirect_authenticated_user=True
 
 
-class Create_project (CreateView):
+class CreateProject (CreateView):
     template_name = 'project_create.html'
     form_class = ProjectForm
     success_url = reverse_lazy('home')
-
 
 
 def login_page(request):
@@ -74,9 +72,9 @@ def login_page(request):
     return render(request, 'login.html', context)
 
 
-def home (request):
+def home(request):
     projects = Project.objects.all()
-    context = {'projects': projects }
+    context = {'projects': projects}
     return render(request, 'home.html', context)
 
 
@@ -84,8 +82,7 @@ class Home (ListView):
     template_name = 'home.html'
     model = Project
     paginate_by = 1
-    #context object name 'projects'
-
+    # context object name 'projects'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -113,7 +110,7 @@ def project_create(request):
         return render(request, 'project_create.html', {'form': form})
 
 
-def project(request, **kwargs):
+def project_1(request, **kwargs):
     project = Project.objects.get(id=kwargs['id'])
     if request.method == "POST":
         form = TaskCreateForm(request.POST)
@@ -164,19 +161,17 @@ class FormPage (FormView):
     form_class = TestForm
     success_url = reverse_lazy()
 
-    def form_valid (self, form):
+    def form_valid(self, form):
         response = HttpResponse()
         response.set_cookie('name', form.cleaned_data['name'])
         return super().form_valid(form)
 
 
 class ProjectPage(TemplateView):
-    template_name='project.html'
-
+    template_name = 'project.html'
 
     def get_success_url(self):
         return f'/project/{self.kwargs["id"]}'
-
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(*kwargs)
@@ -186,7 +181,6 @@ class ProjectPage(TemplateView):
         context['form'] = TaskCreateForm()
         return context
 
-
     def post(self, request, **kwargs):
         data = request.POST
         project = Project.objects.get(id=self.kwargs['id'])
@@ -194,8 +188,7 @@ class ProjectPage(TemplateView):
         task.save()
         return JsonResponse({ 'resp': 'OK'})
 
-
-    def post(self, request):
+    def post1(self, request):
         data = request.POST
         resp = render_to_string('response.html', {'name': data['name'],'email':data['email'],'password':data['password']})
         return JsonResponse (resp, safe=False)
@@ -220,10 +213,10 @@ def user_search(request):
 
 class SearchPage(TemplateView):
     template_name = 'search.html'
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
-
 
     def post(self, request,):
         data = request.POST
@@ -264,23 +257,16 @@ def like_post(request, post_id):
 
 def comment(request, post_id):
     try:
-        post = Post.objects.get(pk=post_id)
-
-        if request.method == 'POST':
-            form = CommentForm(request.POST)
-
-            if form.is_valid():
-                comment = form.save(commit=False)
-                comment.post = post
-                comment.user = request.user
-                comment.save()
-
-                return JsonResponse({'status': 'success'})
-
-        return JsonResponse({'status': 'error', 'message': 'Invalid form submission'})
-
+        post = Post.objects.get(id=post_id)
     except Post.DoesNotExist:
-        return JsonResponse({'status': 'error', 'message': 'Post not found'}, status=404)
+        return redirect('main_post')
+
+    text = request.POST.get('text')
+
+    if text:
+        Comment.objects.create(post=post, text=text)
+
+    return redirect('main_post')
 
 
 def update_profile(request):
@@ -295,6 +281,26 @@ def update_profile(request):
     return render(request, 'update_profile.html', {'form': form})
 
 
+
 def main_post(request):
     main_post = Post.objects.all()
-    return render(request, 'main_post.html', {'posts': main_post})
+    coments = Comment.objects.all()
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+
+
+def comment_create(request):
+    if request.method == 'POST':
+        text = request.POST.get('text')
+        post_id = request.POST.get('post_id')
+        takepost = Post.objects.get(id=int(post_id))
+        # Comment.objects.create(content=text, post=takepost, user=request.user)
+        comment = Comment(content=text, post=takepost, user=request.user)
+        comment.save()
+    return redirect('/all_posts')
+
+
+
+
+
+
+

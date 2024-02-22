@@ -1,24 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Увійти</title>
+    <style>
+        body {
+            background-color: #005cbf; /* Головний колір: блакитний */
+            color: #fff; /* Текст: білий */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ffa500; /* Заголовок: помаранчевий */
+        }
+
+        form {
+            background-color: #004080; /* Фон форми: темно-синій */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            color: #ffa500; /* Текст мітки: помаранчевий */
+        }
+
+        input {
+            background-color: #004080; /* Фон вводу: темно-синій */
+            color: #fff; /* Текст вводу: білий */
+            border: 1px solid #ffa500; /* Обрамлення вводу: помаранчевий */
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #ffa500; /* Кнопка відправки: помаранчевий */
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        p {
+            color: #ffa500; /* Текст підформи: помаранчевий */
+        }
+
+        a {
+            color: #ffa500; /* Текст посилання: помаранчевий */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h2>Login</h2>
+    <h2>Увійти</h2>
     <form method="post">
         {% csrf_token %}
-        <label for="username">Username:</label>
+        <label for="username">Ім'я користувача:</label>
         <input type="text" id="username" name="username" required><br>
 
-        <label for="password">Password:</label>
+        <label for="password">Пароль:</label>
         <input type="password" id="password" name="password" required><br>
 
-        <input type="submit" value="Login">
+        <input type="submit" value="Увійти">
     </form>
 
-    <p>Don't have an account? <a href="/registration">Register</a></p>
+    <p>Ще не маєте облікового запису? <a href="/registration">Зареєструватися</a></p>
 </body>
 </html>

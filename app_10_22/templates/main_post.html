@@ -1,17 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Усі пости</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #005cbf;
+            color: #fff;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #ffcc29;
+        }
+
+        div {
+            border: 1px solid #ffcc29;
+            background-color: #007bff;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        small {
+            color: #ffcc29;
+        }
+</style>
 </head>
 <body>
     <h1>Усі пости</h1>
-
     {% for post in posts %}
         <div>
             <p>{{ post.content }}</p>
             <small>Автор: {{ post.user.username }}</small>
+            <label for="comment_text">comment</label>
+            <input type="text" name="text" id="comment_text">
+<!--            <button type="submit">commenting</button>-->
+            <form class="post-form" method="POST" >
+                {{ form }}
+                {% csrf_token %}
+            <button type="submit">sumbit</button>
+            </form>
+            {% for comment in comments %}
+            {% if comment.post == post %}
+            <h3>{{ comment.text }}</h3>
+            {% endif %}
+            {% endfor %}
         </div>
     {% endfor %}
 </body>

@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Search</title>
+    <title>Пошук Користувачів</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="/static/js/search.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #005cbf; /* Головний колір: блакитний */
+            color: #fff; /* Текст: білий */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #004080; /* Колір заголовку: темно-синій */
+            color: #ffa500; /* Текст заголовку: помаранчевий */
+            text-align: center;
+            padding: 1rem;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #ffa500; /* Текст мітки: помаранчевий */
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ffa500; /* Обрамлення вводу: помаранчевий */
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #004080; /* Фон вводу: темно-синій */
+            color: #fff; /* Текст вводу: білий */
+        }
+
+        #result {
+            color: #fff; /* Текст результату: білий */
+        }
+    </style>
 </head>
 <body>
 
-<h1>User Search</h1>
+<h1>Пошук Користувачів</h1>
     {% csrf_token %}
-    <label for="search">Search users:</label>
+    <label for="search">Пошук користувачів:</label>
     <input type="text" id="search" name="q" required>
-<div id="result" ></div>
+<div id="result"></div>
 </body>
 </html>
 

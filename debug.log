@@ -3516,3 +3516,1332 @@ Not Found: /
 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4577
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4628
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 483
+Not Found: /
+"GET / HTTP/1.1" 404 4577
+"GET /all_posts/ HTTP/1.1" 200 483
+"GET /create_post HTTP/1.1" 301 0
+"GET /create_post/ HTTP/1.1" 200 1857
+Internal Server Error: /create_post/
+Traceback (most recent call last):
+  File "C:\Users\vladislav\anaconda3\envs\for_django\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vladislav\anaconda3\envs\for_django\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vladislav\my_files\help_for_nikita\projk13\app_10_22\views.py", line 209, in create_post
+    new_post.user = request.user
+    ^^^^^^^^^^^^^
+  File "C:\Users\vladislav\anaconda3\envs\for_django\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x0000019A47DD4DD0>>": "Post.user" must be a "User" instance.
+"POST /create_post/ HTTP/1.1" 500 73358
+C:\Users\vladislav\my_files\help_for_nikita\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /registration/ HTTP/1.1" 200 1487
+"POST /registration/ HTTP/1.1" 200 1664
+"POST /registration/ HTTP/1.1" 200 1610
+"POST /registration/ HTTP/1.1" 302 0
+"GET /profile/8/ HTTP/1.1" 200 2462
+Not Found: /profile/8/profile_picture.jpg
+"GET /profile/8/profile_picture.jpg HTTP/1.1" 404 4682
+"GET /all_posts/ HTTP/1.1" 200 483
+Not Found: /post/
+"GET /post/ HTTP/1.1" 404 4610
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 769
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4577
+"GET /search/ HTTP/1.1" 200 686
+"GET /static/js/search.js HTTP/1.1" 200 502
+"POST /searchingUser/ HTTP/1.1" 200 52
+"GET /profile/1/ HTTP/1.1" 200 2462
+Not Found: /profile/1/profile_picture.jpg
+"GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4682
+Not Found: /all_post
+"GET /all_post HTTP/1.1" 404 4619
+"GET /all_posts/ HTTP/1.1" 200 769
+C:\Users\User\Desktop\projk14\projk13\app_10_22\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4577
+"GET /all_posts/ HTTP/1.1" 200 1106
+"GET /all_posts/ HTTP/1.1" 200 1253
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 1356
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /all_posts/ HTTP/1.1" 200 3028
+"GET /all_posts/ HTTP/1.1" 200 4852
+"GET /all_posts/ HTTP/1.1" 200 4134
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 287, in main_post
+    return render(request, 'main_post.html', {'posts': main_post})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 34: 'for'. Looking for one of: empty, endfor.
+"GET /all_posts/ HTTP/1.1" 500 147244
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 287, in main_post
+    return render(request, 'main_post.html', {'posts': main_post})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 34: 'for'. Looking for one of: empty, endfor.
+"GET /all_posts/ HTTP/1.1" 500 146687
+"GET /all_posts/ HTTP/1.1" 200 1356
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /all_posts/ HTTP/1.1" 200 1944
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 730
+"GET /all_posts/ HTTP/1.1" 200 726
+"GET /all_posts/ HTTP/1.1" 200 726
+"GET /all_posts/ HTTP/1.1" 200 726
+"GET /all_posts/ HTTP/1.1" 200 726
+"GET /all_posts/ HTTP/1.1" 200 726
+"GET /all_posts/ HTTP/1.1" 200 726
+"GET /all_posts/ HTTP/1.1" 200 726
+"GET /all_posts/ HTTP/1.1" 200 726
+"GET /all_posts/ HTTP/1.1" 200 726
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 726
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /all_posts/ HTTP/1.1" 200 1454
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 288, in main_post
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 33: 'for'. Looking for one of: empty, endfor.
+"GET /all_posts/ HTTP/1.1" 500 146576
+"GET /all_posts/ HTTP/1.1" 200 1518
+"GET /all_posts/ HTTP/1.1" 200 1788
+"GET /all_posts/ HTTP/1.1" 200 2368
+"GET /all_posts/ HTTP/1.1" 200 2368
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 288, in main_post
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comment_create' not found. 'comment_create' is not a valid view function or pattern name.
+"GET /all_posts/ HTTP/1.1" 500 132176
+"GET /create_post/ HTTP/1.1" 200 1857
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 288, in main_post
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comment_create' not found. 'comment_create' is not a valid view function or pattern name.
+"GET /all_posts/ HTTP/1.1" 500 132293
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 288, in main_post
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comment_create' not found. 'comment_create' is not a valid view function or pattern name.
+"GET /all_posts/ HTTP/1.1" 500 132293
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 288, in main_post
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comment_create' not found. 'comment_create' is not a valid view function or pattern name.
+"GET /all_posts/ HTTP/1.1" 500 132293
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 288, in main_post
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comment_create' not found. 'comment_create' is not a valid view function or pattern name.
+"GET /all_posts/ HTTP/1.1" 500 132293
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 288, in main_post
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comment_create' not found. 'comment_create' is not a valid view function or pattern name.
+"GET /all_posts/ HTTP/1.1" 500 132293
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 288, in main_post
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comment' not found. 'comment' is not a valid view function or pattern name.
+"GET /all_posts/ HTTP/1.1" 500 132125
+"GET /all_posts/ HTTP/1.1" 200 2498
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 288, in main_post
+    return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'comment_create' not found. 'comment_create' is not a valid view function or pattern name.
+"GET /all_posts/ HTTP/1.1" 500 133333
+"GET /all_posts/ HTTP/1.1" 200 4728
+"POST /all_posts/ HTTP/1.1" 200 4728
+"POST /all_posts/ HTTP/1.1" 200 4728
+"POST /all_posts/ HTTP/1.1" 200 4728
+"POST /all_posts/ HTTP/1.1" 200 4728
+"POST /all_posts/ HTTP/1.1" 200 4728
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /all_posts/ HTTP/1.1" 200 4823
+"POST /all_posts/ HTTP/1.1" 200 4823
+Internal Server Error: /comments
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/comments/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /comments HTTP/1.1" 500 71015
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /comments
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/comments/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /comments HTTP/1.1" 500 71015
+Internal Server Error: /comments
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/comments/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /comments HTTP/1.1" 500 71015
+"POST /all_posts/ HTTP/1.1" 200 4828
+"POST /all_posts/ HTTP/1.1" 200 4828
+Internal Server Error: /comments/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 295, in comment_create
+    Comment.objects.create(content=text, post=post_id, user=request.user)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "'1'": "Comment.post" must be a "Post" instance.
+"POST /comments/ HTTP/1.1" 500 84977
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 4998
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 5170
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 5339
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 5512
+"GET /all_posts/ HTTP/1.1" 200 5477
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 5651
+"GET /registration/ HTTP/1.1" 200 1487
+"GET /login/ HTTP/1.1" 200 801
+"GET /create_post/ HTTP/1.1" 200 1857
+"GET /search/ HTTP/1.1" 200 686
+"GET /static/js/search.js HTTP/1.1" 304 0
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /login/ HTTP/1.1" 200 2569
+"GET /create_post/ HTTP/1.1" 200 2370
+"GET /create_post/ HTTP/1.1" 200 2373
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 6551
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 6755
+"POST /searchingUser/ HTTP/1.1" 200 128
+"POST /searchingUser/ HTTP/1.1" 200 128
+"GET /profile/7 HTTP/1.1" 301 0
+"GET /profile/7/ HTTP/1.1" 200 2462
+Not Found: /profile/7/profile_picture.jpg
+"GET /profile/7/profile_picture.jpg HTTP/1.1" 404 4861
+"GET /profile/7/ HTTP/1.1" 200 3372
+Not Found: /profile/7/profile_picture.jpg
+"GET /profile/7/profile_picture.jpg HTTP/1.1" 404 4861
+"GET /profile/7/ HTTP/1.1" 200 3375
+Not Found: /profile/7/profile_picture.jpg
+"GET /profile/7/profile_picture.jpg HTTP/1.1" 404 4861
+Not Found: /оновити_профіль/
+"POST /%D0%BE%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D0%B8_%D0%BF%D1%80%D0%BE%D1%84%D1%96%D0%BB%D1%8C/ HTTP/1.1" 404 4921
+"GET /profile/7/ HTTP/1.1" 200 3360
+Not Found: /profile/7/profile_picture.jpg
+"GET /profile/7/profile_picture.jpg HTTP/1.1" 404 4861
+Internal Server Error: /update_profile/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 274, in update_profile
+    form = UpdateProfileForm(request.POST, instance=request.user.profile)
+                                                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 492, in __get__
+    raise self.RelatedObjectDoesNotExist(
+app_10_22.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+"POST /update_profile/ HTTP/1.1" 500 74522
+"GET /search/ HTTP/1.1" 200 1964
+"POST /searchingUser/ HTTP/1.1" 200 6
+"POST /searchingUser/ HTTP/1.1" 200 6
+"POST /searchingUser/ HTTP/1.1" 200 6
+"POST /searchingUser/ HTTP/1.1" 200 6
+"POST /searchingUser/ HTTP/1.1" 200 6
+"POST /searchingUser/ HTTP/1.1" 200 6
+"POST /searchingUser/ HTTP/1.1" 200 322
+"POST /searchingUser/ HTTP/1.1" 200 166
+"GET /search/ HTTP/1.1" 200 1965
+"POST /searchingUser/ HTTP/1.1" 200 166
+"GET /search/ HTTP/1.1" 200 1970
+"GET /search/ HTTP/1.1" 200 1965
+"POST /searchingUser/ HTTP/1.1" 200 166
+"GET /search/ HTTP/1.1" 200 1968
+"POST /searchingUser/ HTTP/1.1" 200 166
+"GET /search/ HTTP/1.1" 200 1968
+"POST /searchingUser/ HTTP/1.1" 200 166
+"GET /search/ HTTP/1.1" 200 1971
+"POST /searchingUser/ HTTP/1.1" 200 166
+"GET /search/ HTTP/1.1" 200 1971
+"GET /search/ HTTP/1.1" 200 1968
+"POST /searchingUser/ HTTP/1.1" 200 322
+"POST /searchingUser/ HTTP/1.1" 200 166
+"POST /searchingUser/ HTTP/1.1" 200 322
+"GET /search/ HTTP/1.1" 200 1968
+"POST /searchingUser/ HTTP/1.1" 200 166
+"GET /search/ HTTP/1.1" 200 1968
+"GET /search/ HTTP/1.1" 200 1968
+"GET /search/ HTTP/1.1" 200 1970
+"POST /searchingUser/ HTTP/1.1" 200 166
+"POST /searchingUser/ HTTP/1.1" 200 322
+"POST /searchingUser/ HTTP/1.1" 200 166
+"GET /search/ HTTP/1.1" 200 1567
+"POST /searchingUser/ HTTP/1.1" 200 166
+"POST /searchingUser/ HTTP/1.1" 200 322
+"POST /searchingUser/ HTTP/1.1" 200 166
+"POST /searchingUser/ HTTP/1.1" 200 322
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /admin/app_10_22/post/ HTTP/1.1" 200 9406
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /static/admin/css/base.css HTTP/1.1" 200 21207
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /static/js/search.js HTTP/1.1" 304 0
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /all_posts/ HTTP/1.1" 200 6755
+"GET /login/ HTTP/1.1" 200 2569
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /search/ HTTP/1.1" 200 1567
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /admin/app_10_22/post/ HTTP/1.1" 200 9406
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+"GET /login/ HTTP/1.1" 200 2569
+"GET /login/ HTTP/1.1" 200 2569
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /search/ HTTP/1.1" 200 1567
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /all_posts/ HTTP/1.1" 200 6755
+"POST /registration/ HTTP/1.1" 200 2338
+"POST /registration/ HTTP/1.1" 302 0
+"GET /profile/9/ HTTP/1.1" 200 3360
+Not Found: /profile/9/profile_picture.jpg
+"GET /profile/9/profile_picture.jpg HTTP/1.1" 404 4861
+Forbidden (CSRF token from POST incorrect.): /login/
+"POST /login/ HTTP/1.1" 403 2518
+"GET /login/ HTTP/1.1" 200 2569
+Forbidden (CSRF token from POST incorrect.): /searchingUser/
+"POST /searchingUser/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /searchingUser/
+"POST /searchingUser/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /searchingUser/
+"POST /searchingUser/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /searchingUser/
+"POST /searchingUser/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /searchingUser/
+"POST /searchingUser/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /searchingUser/
+"POST /searchingUser/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /searchingUser/
+"POST /searchingUser/ HTTP/1.1" 403 2518
+Internal Server Error: /update_profile/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 279, in update_profile
+    form = UpdateProfileForm(instance=request.user.profile)
+                                      ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 268, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 492, in __get__
+    raise self.RelatedObjectDoesNotExist(
+app_10_22.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+"GET /update_profile/ HTTP/1.1" 500 73418
+Forbidden (CSRF token from POST incorrect.): /searchingUser/
+"POST /searchingUser/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /create_post/
+"POST /create_post/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /comments/
+"POST /comments/ HTTP/1.1" 403 2518
+Forbidden (CSRF token from POST incorrect.): /comments/
+"POST /comments/ HTTP/1.1" 403 2518
+Not Found: /
+"GET / HTTP/1.1" 404 4756
+"GET /search/ HTTP/1.1" 200 1567
+"POST /searchingUser/ HTTP/1.1" 200 96
+"POST /searchingUser/ HTTP/1.1" 200 366
+"POST /searchingUser/ HTTP/1.1" 200 243
+"POST /searchingUser/ HTTP/1.1" 200 44
+"POST /searchingUser/ HTTP/1.1" 200 44
+"POST /searchingUser/ HTTP/1.1" 200 6
+"POST /searchingUser/ HTTP/1.1" 200 243
+"POST /searchingUser/ HTTP/1.1" 200 44
+"POST /searchingUser/ HTTP/1.1" 200 44
+"GET /profile/4 HTTP/1.1" 301 0
+"GET /profile/4/ HTTP/1.1" 200 3360
+Not Found: /profile/4/profile_picture.jpg
+"GET /profile/4/profile_picture.jpg HTTP/1.1" 404 4861
+"GET /all_posts/ HTTP/1.1" 200 6755
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 6953
+"GET /create_post/ HTTP/1.1" 200 2373
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 7913
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 8136
+"GET /login/ HTTP/1.1" 200 2569
+"POST /login/ HTTP/1.1" 200 2569
+"GET /create_post/ HTTP/1.1" 200 2373
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 9122
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 9373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /search/ HTTP/1.1" 200 1567
+"GET /static/js/search.js HTTP/1.1" 304 0
+"POST /searchingUser/ HTTP/1.1" 200 96
+"GET /profile/1/ HTTP/1.1" 200 3360
+Not Found: /profile/1/profile_picture.jpg
+"GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4861
+Not Found: /
+"GET / HTTP/1.1" 404 4756
+"GET /search/ HTTP/1.1" 200 1567
+"GET /static/js/search.js HTTP/1.1" 304 0
+"POST /searchingUser/ HTTP/1.1" 200 96
+"POST /searchingUser/ HTTP/1.1" 200 366
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+Not Found: /profile/1/profile_picture.jpg
+"GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4861
+Not Found: /
+"GET / HTTP/1.1" 404 4756
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /create_post/ HTTP/1.1" 200 2373
+"GET /profile/1/ HTTP/1.1" 200 3360
+Not Found: /profile/1/profile_picture.jpg
+"GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4861
+"GET /profile/1/ HTTP/1.1" 200 3360
+Not Found: /profile/1/profile_picture.jpg
+"GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4861
+"GET /all_posts/ HTTP/1.1" 200 9373
+"GET /all_posts/ HTTP/1.1" 200 9373
+"GET /all_posts/ HTTP/1.1" 200 9373
+"GET /all_posts/ HTTP/1.1" 200 9373
+"GET /all_posts/ HTTP/1.1" 200 9373
+Not Found: /profile/9/profile_picture.jpg
+"GET /profile/9/profile_picture.jpg HTTP/1.1" 404 4861
+"GET /login/ HTTP/1.1" 200 2569
+- Broken pipe from ('127.0.0.1', 50909)
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4756
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4807
+"GET /all_posts/ HTTP/1.1" 200 8492
+Not Found: /add_comment/1
+"POST /add_comment/1 HTTP/1.1" 404 4814
+Not Found: /add_comment/1
+"POST /add_comment/1 HTTP/1.1" 404 4814
+"GET /create_post/ HTTP/1.1" 200 1857
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /login/ HTTP/1.1" 200 2569
+"GET /search/ HTTP/1.1" 200 1964
+"POST /searchingUser/ HTTP/1.1" 200 96
+"GET /profile/1/ HTTP/1.1" 200 3360
+Not Found: /profile/1/profile_picture.jpg
+"GET /profile/1/profile_picture.jpg HTTP/1.1" 404 4861
+"GET /all_posts/ HTTP/1.1" 200 5634
+Not Found: /
+"GET / HTTP/1.1" 404 4756
+"GET /all_posts/ HTTP/1.1" 200 5634
+Not Found: /
+"GET / HTTP/1.1" 404 4756
+"GET /all_posts/ HTTP/1.1" 200 5850
+"GET /all_posts/ HTTP/1.1" 200 7074
+"GET /all_posts/ HTTP/1.1" 200 7138
+"GET /all_posts/ HTTP/1.1" 200 11643
+"POST /all_posts/ HTTP/1.1" 200 11643
+"POST /all_posts/ HTTP/1.1" 200 11643
+"GET /registration/ HTTP/1.1" 200 2215
+"POST /registration/ HTTP/1.1" 302 0
+"GET /profile/10/ HTTP/1.1" 200 3360
+Not Found: /profile/10/profile_picture.jpg
+"GET /profile/10/profile_picture.jpg HTTP/1.1" 404 4864
+"GET /all_posts/ HTTP/1.1" 200 11643
+"POST /all_posts/ HTTP/1.1" 200 11643
+"POST /all_posts/ HTTP/1.1" 200 11755
+"POST /all_posts/ HTTP/1.1" 200 11699
+"POST /all_posts/ HTTP/1.1" 200 11699
+"POST /all_posts/ HTTP/1.1" 200 7482
+"POST /all_posts/ HTTP/1.1" 200 7482
+"POST /all_posts/ HTTP/1.1" 200 7538
+"POST /all_posts/ HTTP/1.1" 200 7538
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 3702
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/base.css HTTP/1.1" 200 21207
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 3864
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 5813
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/app_10_22/post/ HTTP/1.1" 200 9842
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/app_10_22/post/8/change/ HTTP/1.1" 200 9329
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9047
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11900
+C:\Users\User\Desktop\projk14\projk13\app_10_22\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/app_10_22/post/8/change/ HTTP/1.1" 200 10529
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /admin/app_10_22/friendship/ HTTP/1.1" 200 8419
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/8/change/ HTTP/1.1" 200 12476
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/post/ HTTP/1.1" 200 11042
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/post/ HTTP/1.1" 200 11042
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/4/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7642
+"POST /all_posts/ HTTP/1.1" 200 7642
+"POST /all_posts/ HTTP/1.1" 200 7642
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/9/history/ HTTP/1.1" 200 7326
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/8/change/ HTTP/1.1" 200 12476
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/8/history/ HTTP/1.1" 200 7326
+"GET /admin/app_10_22/comment/8/change/ HTTP/1.1" 200 12476
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/8/change/ HTTP/1.1" 200 12476
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/1/change/ HTTP/1.1" 200 12475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/8/change/ HTTP/1.1" 200 12476
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/6/change/ HTTP/1.1" 200 12483
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/4/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/3/change/ HTTP/1.1" 200 12474
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/2/change/ HTTP/1.1" 200 12477
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/8/change/ HTTP/1.1" 200 12476
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/app_10_22/comment/9/change/ HTTP/1.1" 302 0
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11556
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"POST /all_posts/ HTTP/1.1" 200 7698
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/8/change/ HTTP/1.1" 200 12476
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/6/change/ HTTP/1.1" 200 12483
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/4/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/2/change/ HTTP/1.1" 200 12477
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/1/change/ HTTP/1.1" 200 12475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/friendship/ HTTP/1.1" 200 8419
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/like/ HTTP/1.1" 200 8377
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/post/ HTTP/1.1" 200 11042
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/profile/ HTTP/1.1" 200 8398
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/9/change/ HTTP/1.1" 200 12478
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"GET /admin/app_10_22/comment/add/ HTTP/1.1" 200 12223
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/app_10_22/comment/ HTTP/1.1" 200 11339
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4756
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+"POST /all_posts/ HTTP/1.1" 200 7698
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader

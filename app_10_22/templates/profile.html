@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
+    <title>Профіль Користувача</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
+            background-color: #005cbf; /* Головний колір: блакитний */
             margin: 0;
             padding: 0;
+            color: #005cbf; /* Текст: білий */
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background-color: #004080; /* Колір заголовку: темно-синій */
+            color: #ffa500; /* Текст заголовку: помаранчевий */
             text-align: center;
             padding: 1rem;
         }
@@ -22,7 +23,7 @@
         section {
             max-width: 600px;
             margin: 20px auto;
-            background-color: white;
+            background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,14 +36,17 @@
 
         label {
             margin-bottom: 8px;
+            color: #ffa500; /* Текст мітки: помаранчевий */
         }
 
         input, textarea {
             padding: 10px;
             margin-bottom: 16px;
-            border: 1px solid #ccc;
+            border: 1px solid #ffa500; /* Обрамлення вводу: помаранчевий */
             border-radius: 4px;
             font-size: 16px;
+            background-color: #004080; /* Фон вводу: темно-синій */
+            color: #fff; /* Текст вводу: білий */
         }
 
         button {
@@ -58,8 +62,8 @@
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #333;
-            color: white;
+            background-color: #004080; /* Колір нижнього колонтитулу: темно-синій */
+            color: #ffa500; /* Текст нижнього колонтитулу: помаранчевий */
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -68,12 +72,12 @@
 </head>
 <body>
     <header>
-        <h1>User Profile</h1>
+        <h1>Профіль Користувача</h1>
     </header>
 
     <section>
         <div>
-            <img src="profile_picture.jpg" alt="Profile Picture" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+            <img src="profile_picture.jpg" alt="Аватар" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
         </div>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet metus vel augue dapibus ultrices.</p>
     </section>
@@ -82,14 +86,18 @@
         <h2></h2>
         <form action="/update_profile/" method="POST">
             {% csrf_token %}
-            <label for="username"></label>
+            <label for="username">Ім'я користувача:</label>
             <input type="text" id="username" name="username" required>
 
-            <label for="bio"></label>
+            <label for="bio">Біографія:</label>
             <textarea id="bio" name="bio"></textarea>
 
-            <button type="submit"></button>
+            <button type="submit">Оновити</button>
         </form>
     </section>
+
+    <footer>
+        &copy; 2024 Всі права захищено
+    </footer>
 </body>
 </html>
