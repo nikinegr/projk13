@@ -4845,3 +4845,161 @@ C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
 Watching for file changes with StatReloader
 C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /all_posts/ HTTP/1.1" 200 7650
+"POST /all_posts/ HTTP/1.1" 200 7650
+"POST /all_posts/ HTTP/1.1" 200 7650
+"POST /all_posts/ HTTP/1.1" 200 7650
+"POST /all_posts/ HTTP/1.1" 200 7650
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /all_posts/ HTTP/1.1" 200 7650
+"POST /all_posts/ HTTP/1.1" 200 7650
+"POST /all_posts/ HTTP/1.1" 200 7650
+C:\Users\User\Desktop\projk14\projk13\app_10_22\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /all_posts/ HTTP/1.1" 200 7650
+"POST /all_posts/ HTTP/1.1" 200 7650
+C:\Users\User\Desktop\projk14\projk13\app_10_22\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+"POST /all_posts/ HTTP/1.1" 200 5485
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\projk14\projk13\app_10_22\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 291, in main_post
+    takepost = Post.objects.get(id=int(post_id))
+                                   ^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+"POST /all_posts/ HTTP/1.1" 500 67017
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 291, in main_post
+    takepost = Post.objects.get(id=(post_id))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+app_10_22.models.Post.DoesNotExist: Post matching query does not exist.
+"POST /all_posts/ HTTP/1.1" 500 75777
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 6005
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 291, in main_post
+    takepost = Post.objects.get(id=(post_id))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+app_10_22.models.Post.DoesNotExist: Post matching query does not exist.
+"POST /all_posts/ HTTP/1.1" 500 75839
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 6523
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 291, in main_post
+    takepost = Post.objects.get(id=(post_id))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+app_10_22.models.Post.DoesNotExist: Post matching query does not exist.
+"POST /all_posts/ HTTP/1.1" 500 75911
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /all_posts/ HTTP/1.1" 200 7043
+Internal Server Error: /all_posts/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 291, in main_post
+    takepost = Post.objects.get(id=(post_id))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+app_10_22.models.Post.DoesNotExist: Post matching query does not exist.
+"POST /all_posts/ HTTP/1.1" 500 75973
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4756
+"GET /all_posts/ HTTP/1.1" 200 9521
+Not Found: /all_posts/comments
+"POST /all_posts/comments HTTP/1.1" 404 4829
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /all_posts/ HTTP/1.1" 200 9521
+"GET /all_posts/ HTTP/1.1" 200 9521
+Not Found: /all_posts/comments
+"POST /all_posts/comments HTTP/1.1" 404 4829
+Not Found: /all_posts/comments
+"POST /all_posts/comments HTTP/1.1" 404 4829
+"GET /all_posts/ HTTP/1.1" 200 9433
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 9756
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 10082
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 10405
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 10729
+"POST /comments/ HTTP/1.1" 302 0
+"GET /all_posts HTTP/1.1" 301 0
+"GET /all_posts/ HTTP/1.1" 200 11052

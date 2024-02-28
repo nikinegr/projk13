@@ -26,25 +26,23 @@
         small {
             color: #ffcc29;
         }
-</style>
+    </style>
 </head>
 <body>
     <h1>Усі пости</h1>
     {% for post in posts %}
         <div>
             <p>{{ post.content }}</p>
-            <small>Автор: {{ post.user.username }}</small>
+            <form method="POST" action="/comments/">
+            {% csrf_token %}
             <label for="comment_text">comment</label>
             <input type="text" name="text" id="comment_text">
-<!--            <button type="submit">commenting</button>-->
-            <form class="post-form" method="POST" >
-                {{ form }}
-                {% csrf_token %}
-            <button type="submit">sumbit</button>
+            <input type="hidden" name="post_id" value="{{ post.id }}">
+            <button type="submit">komm</button>
             </form>
             {% for comment in comments %}
             {% if comment.post == post %}
-            <h3>{{ comment.text }}</h3>
+            <h3>{{ comment.content }}</h3>
             {% endif %}
             {% endfor %}
         </div>

@@ -281,7 +281,6 @@ def update_profile(request):
     return render(request, 'update_profile.html', {'form': form})
 
 
-
 def main_post(request):
     main_post = Post.objects.all()
     coments = Comment.objects.all()
@@ -293,10 +292,25 @@ def comment_create(request):
         text = request.POST.get('text')
         post_id = request.POST.get('post_id')
         takepost = Post.objects.get(id=int(post_id))
-        # Comment.objects.create(content=text, post=takepost, user=request.user)
-        comment = Comment(content=text, post=takepost, user=request.user)
-        comment.save()
+        Comment.objects.create(content=text, post=takepost, user=request.user)
     return redirect('/all_posts')
+
+
+# def main_post(request):
+#     main_post = Post.objects.all()
+#     coments = Comment.objects.all()
+#     if request.method == 'POST':
+#         text = request.POST.get('comment_text')
+#         post_id = request.POST.get('post_id')
+#         takepost = Post.objects.get(id=(post_id))
+#         # Comment.objects.create(content=text, post=takepost, user=request.user)
+#         comment = Comment(content=text, post=takepost, user=request.user)
+#         comment.save()
+#     return render(request, 'main_post.html', {'posts': main_post, 'comments': coments})
+
+
+# def comment_create(request):
+
 
 
 
