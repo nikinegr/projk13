@@ -5003,3 +5003,299 @@ Not Found: /all_posts/comments
 "POST /comments/ HTTP/1.1" 302 0
 "GET /all_posts HTTP/1.1" 301 0
 "GET /all_posts/ HTTP/1.1" 200 11052
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 4756
+C:\Users\User\Desktop\projk14\projk13\app_10_22\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 11052
+"POST /comments/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 11375
+"GET / HTTP/1.1" 200 12882
+"GET / HTTP/1.1" 200 13256
+"GET /login HTTP/1.1" 301 0
+"GET /login/ HTTP/1.1" 200 2569
+"GET /registration HTTP/1.1" 301 0
+"GET /registration/ HTTP/1.1" 200 2215
+"GET / HTTP/1.1" 200 11546
+"GET / HTTP/1.1" 200 11545
+"GET / HTTP/1.1" 200 11620
+"GET /create_post HTTP/1.1" 301 0
+"GET /create_post/ HTTP/1.1" 200 1857
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /login/ HTTP/1.1" 200 2569
+"GET / HTTP/1.1" 200 11702
+"GET / HTTP/1.1" 200 14124
+"GET / HTTP/1.1" 200 14329
+"GET / HTTP/1.1" 200 14329
+"GET / HTTP/1.1" 200 14329
+"GET / HTTP/1.1" 200 14641
+"POST /comments/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 15042
+"POST /comments/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 15446
+"GET /search HTTP/1.1" 301 0
+"GET /search/ HTTP/1.1" 200 1964
+"GET /static/js/search.js HTTP/1.1" 304 0
+"POST /searchingUser/ HTTP/1.1" 200 6
+"POST /searchingUser/ HTTP/1.1" 200 451
+"POST /searchingUser/ HTTP/1.1" 200 451
+"POST /searchingUser/ HTTP/1.1" 200 451
+"POST /searchingUser/ HTTP/1.1" 200 451
+"POST /searchingUser/ HTTP/1.1" 200 451
+"POST /searchingUser/ HTTP/1.1" 200 451
+"POST /searchingUser/ HTTP/1.1" 200 451
+"POST /searchingUser/ HTTP/1.1" 200 45
+"GET /profile/8 HTTP/1.1" 301 0
+"GET /profile/8/ HTTP/1.1" 200 3360
+Not Found: /profile/8/profile_picture.jpg
+"GET /profile/8/profile_picture.jpg HTTP/1.1" 404 4851
+"GET / HTTP/1.1" 200 15446
+"GET / HTTP/1.1" 200 15446
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /comments/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 15887
+"GET /login/ HTTP/1.1" 200 2569
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /create_post/ HTTP/1.1" 302 0
+Not Found: /all_posts/
+"GET /all_posts/ HTTP/1.1" 404 4794
+"GET / HTTP/1.1" 200 16933
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /create_post/ HTTP/1.1" 302 0
+Not Found: / /
+"GET /%20/ HTTP/1.1" 404 4772
+"POST /create_post/ HTTP/1.1" 302 0
+Not Found: / /
+"GET /%20/ HTTP/1.1" 404 4772
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: / /
+"GET /%20/ HTTP/1.1" 404 4772
+Internal Server Error: /create_post/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 204, in create_post
+    return redirect('')
+           ^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+"POST /create_post/ HTTP/1.1" 500 84701
+"GET /create_post/ HTTP/1.1" 200 1857
+Internal Server Error: /create_post/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 204, in create_post
+    return redirect('')
+           ^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+"POST /create_post/ HTTP/1.1" 500 84701
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create_post/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 204, in create_post
+    return redirect(' ')
+           ^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for ' ' not found. ' ' is not a valid view function or pattern name.
+"POST /create_post/ HTTP/1.1" 500 84721
+Internal Server Error: /create_post/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 204, in create_post
+    return redirect(' ')
+           ^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for ' ' not found. ' ' is not a valid view function or pattern name.
+"POST /create_post/ HTTP/1.1" 500 84721
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create_post/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 204, in create_post
+    return redirect('')
+           ^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+"POST /create_post/ HTTP/1.1" 500 84701
+"GET /create_post/ HTTP/1.1" 200 1857
+Internal Server Error: /create_post/
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py", line 204, in create_post
+    return redirect('')
+           ^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '' not found. '' is not a valid view function or pattern name.
+"POST /create_post/ HTTP/1.1" 500 84680
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /search/ HTTP/1.1" 200 1964
+"GET / HTTP/1.1" 200 26352
+"POST /comments/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 27034
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /search/ HTTP/1.1" 200 1964
+"GET /search/ HTTP/1.1" 200 1964
+"GET /search/ HTTP/1.1" 200 1964
+"GET /create_post/ HTTP/1.1" 200 1857
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /search/ HTTP/1.1" 200 1964
+"GET / HTTP/1.1" 200 29159
+"GET / HTTP/1.1" 200 29159
+"GET /search/ HTTP/1.1" 200 2527
+"GET /static/js/search.js HTTP/1.1" 304 0
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /search/ HTTP/1.1" 200 2526
+"GET / HTTP/1.1" 200 29159
+"GET / HTTP/1.1" 200 29159
+"GET /create_post/ HTTP/1.1" 200 2143
+"GET / HTTP/1.1" 200 29159
+"GET /create_post/ HTTP/1.1" 200 2143
+"GET / HTTP/1.1" 200 29159
+"GET /search/ HTTP/1.1" 200 2632
+"GET /create_post/ HTTP/1.1" 200 2143
+"GET /create_post/ HTTP/1.1" 200 2629
+"GET /registration/ HTTP/1.1" 200 2215
+"GET /registration/ HTTP/1.1" 200 2494
+"GET /registration/ HTTP/1.1" 200 2883
+"GET /registration/ HTTP/1.1" 200 2990
+"GET /login/ HTTP/1.1" 200 2569
+"GET /create_post/ HTTP/1.1" 200 2629
+"GET /registration/ HTTP/1.1" 200 2990
+"GET / HTTP/1.1" 200 29159
+"GET /registration/ HTTP/1.1" 200 2990
+"GET /create_post/ HTTP/1.1" 200 2629
+"GET /search/ HTTP/1.1" 200 2632
+"GET /login/ HTTP/1.1" 200 2569
+"GET /registration/ HTTP/1.1" 200 2989
+"GET /create_post/ HTTP/1.1" 200 2629
+"GET /login/ HTTP/1.1" 200 2793
+"GET /create_post/ HTTP/1.1" 200 2629
+"GET /registration/ HTTP/1.1" 200 2989
+"GET /login/ HTTP/1.1" 200 2793
+"GET /login/ HTTP/1.1" 200 3182
+"GET /login/ HTTP/1.1" 200 3303
+"GET / HTTP/1.1" 200 29159
+"GET /login/ HTTP/1.1" 200 3303
+"GET /create_post/ HTTP/1.1" 200 2629
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /search/ HTTP/1.1" 200 2632
+"GET /login/ HTTP/1.1" 200 3303
+"GET / HTTP/1.1" 200 30225
+C:\Users\User\Desktop\projk14\projk13\app_10_22\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 30225
+"GET /glowneSTR HTTP/1.1" 301 0
+"GET /glowneSTR/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 30225
+"GET /glowneSTR/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 30225
+"GET /glowneSTR/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 30225
+C:\Users\User\Desktop\projk14\projk13\app_10_22\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /create_post/ HTTP/1.1" 200 2629
+"POST /create_post/ HTTP/1.1" 302 0
+"GET /glowneSTR/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 31295

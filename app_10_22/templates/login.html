@@ -45,6 +45,10 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        input[type="submit"]:hover {
+            background-color: #ff0000;
+            transform: scale(1.1);
+        }
 
         p {
             color: #ffa500; /* Текст підформи: помаранчевий */
@@ -58,9 +62,27 @@
         a:hover {
             text-decoration: underline;
         }
+        a.btn {
+            color: #fff;
+            background-color: #ffcc29;
+            text-decoration: none;
+            padding: 8px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        a.btn:hover {
+            background-color: #ff0000;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
+    <div>
+        <a href="/" class="btn">Всі пости</a>
+        <a href="/create_post" class="btn">Зробити пост</a>
+        <a href="/search" class="btn">Пошук користувачів</a>
+    </div>
     <h2>Увійти</h2>
     <form method="post">
         {% csrf_token %}

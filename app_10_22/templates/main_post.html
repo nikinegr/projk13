@@ -16,33 +16,84 @@
             color: #ffcc29;
         }
 
-        div {
-            border: 1px solid #ffcc29;
+        div.post {
+            border: 2px solid #ffcc29;
             background-color: #007bff;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        div.comment {
+            background-color: #007bff;
+            color: #fff;
             padding: 10px;
-            margin-bottom: 10px;
+            margin-top: 10px;
         }
 
         small {
             color: #ffcc29;
         }
+
+        a.btn {
+            color: #fff;
+            background-color: #ffcc29;
+            text-decoration: none;
+            padding: 8px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a.btn:hover {
+            background-color: #ff0000;
+            transform: scale(1.1);
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ffcc29;
+        }
+
+        button.main-btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffcc29;
+            color: #005cbf;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button.main-btn:hover {
+            background-color: #ff0000;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
     <h1>Усі пости</h1>
+    <div>
+        <a href="/login" class="btn">Увійти</a>
+        <a href="/registration" class="btn">Зареєструватися</a>
+        <a href="/create_post" class="btn">Зробити пост</a>
+        <a href="/search" class="btn">Пошук користувачів</a>
+    </div>
     {% for post in posts %}
-        <div>
+        <div class="post">
             <p>{{ post.content }}</p>
             <form method="POST" action="/comments/">
             {% csrf_token %}
-            <label for="comment_text">comment</label>
+            <label for="comment_text">Коментар</label>
             <input type="text" name="text" id="comment_text">
             <input type="hidden" name="post_id" value="{{ post.id }}">
-            <button type="submit">komm</button>
+            <button type="submit" class="main-btn">Додати коментар</button>
             </form>
             {% for comment in comments %}
             {% if comment.post == post %}
-            <h3>{{ comment.content }}</h3>
+            <div class="comment">
+                <h3 style="color: #fff;">{{ comment.content }}</h3>
+            </div>
             {% endif %}
             {% endfor %}
         </div>

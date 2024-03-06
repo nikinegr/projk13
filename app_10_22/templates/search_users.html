@@ -41,10 +41,28 @@
         #result {
             color: #fff; /* Текст результату: білий */
         }
+        button.main-btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffcc29;
+            color: #005cbf;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        a.btn:hover {
+            background-color: #ff0000;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
-
+    <div>
+        <a href="/login" class="btn">Увійти</a>
+        <a href="/registration" class="btn">Зареєструватися</a>
+        <a href="/create_post" class="btn">Зробити пост</a>
+        <a href="/" class="btn">Всі пости</a>
+    </div>
 <h1>Пошук Користувачів</h1>
     {% csrf_token %}
     <label for="search">Пошук користувачів:</label>

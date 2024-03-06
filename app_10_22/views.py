@@ -201,7 +201,7 @@ def create_post(request):
             new_post = form.save(commit=False)
             new_post.user = request.user
             new_post.save()
-            return redirect('/all_posts/')
+            return redirect('/glowneSTR/')
     else:
         form = PostForm()
     return render(request, 'create_post.html', {'form': form})
@@ -293,7 +293,7 @@ def comment_create(request):
         post_id = request.POST.get('post_id')
         takepost = Post.objects.get(id=int(post_id))
         Comment.objects.create(content=text, post=takepost, user=request.user)
-    return redirect('/all_posts')
+    return redirect('/')
 
 
 # def main_post(request):
